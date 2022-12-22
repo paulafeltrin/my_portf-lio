@@ -1,0 +1,207 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    background: var(--body-bg-color);
+}
+main{
+    display: flex;
+}
+.cards{
+    background: var(--bg-cards);
+    border-radius: 5%;
+    padding: 2vh 2vw;
+    margin: 2vh 2vw;
+}
+.profile a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-decoration: none;
+}
+.img-profile{
+    border-radius: 50%;
+    border: 2px solid green;
+    width: 8vw;
+}
+nav{
+    height: 40vh;
+    padding: 0 2vw;
+}
+nav > ul > li {
+    list-style: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+nav > ul > li > a {
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+nav > ul > li > a > img{
+    padding-right: 1vw;
+    stroke: var(--text-color);
+}
+.tech{
+    display: grid;
+    padding: 2vh 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.tech > li {
+    list-style: none;
+    background: var(--bg-techs);
+    color: var(--body-bg-color);
+    border-radius: 10%;
+    font-size: .7rem;
+    padding: .5vh .5vw;
+    margin: 1.3vh .7vw;
+    text-align: center;
+}
+.tech > li > a{
+    text-decoration: none;
+}
+.tech > li > a:hover{
+    color: var(--body-bg-color);
+}
+.h-1{
+    grid-column: span 1;
+}
+.w-1{
+    grid-row: span 1;
+}
+
+.jobs,
+.education{
+    padding: 2vh 2vw;
+}
+.jobs a,
+.education a{
+    text-decoration: none;
+}
+.jobs li,
+.education li{
+    margin: 1vh 0;
+    padding: 0 .5vw;
+    border-radius: 5%;
+}
+.jobs li:hover,
+.education li:hover{
+    outline: 1px solid var(--text-color);
+}
+.jobs .light,
+.education .light{
+    font-weight: 100;
+}
+.jobs .bold,
+.education .bold{
+    font-weight: 500;
+}
+.projetos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projetos > a{
+    text-decoration: none;
+}
+.title,
+.fig,
+.project-one figure,
+.project-two figure,
+.project-one .stacks,
+.project-two .stacks{
+    display: flex;
+}
+.title img{
+    margin-right: 1vw;
+}
+.project-one .title img,
+.project-two .title img{
+    margin-right: 1vw;
+}
+.project-one p,
+.project-two p{
+    margin: 2vh 0;
+}
+.project-one figure img,
+.project-two figure img{
+    width: 1vw;
+}
+.project-one .stacks,
+.project-two .stacks{
+    justify-content: space-between;
+}
+.fig{
+    align-items: center;
+}
+.fig figcaption{
+    margin-right: .5vw;
+}
+.cards-projects{
+    flex-direction: column;
+}
+.cards-projects a{
+    text-decoration: none;
+}
+.projects,
+.last-post,
+.post{
+    display: flex;
+}
+.last-post .post{
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1vw;
+}
+span{
+    font-size: .8rem;
+}
+.tecnologies{
+    display: flex;
+}
+.tecnologies p{
+    padding: .5vh .5vw;
+}
+.last-post img{
+    width: 8vw;
+    border-radius: 10%;
+}
+
+footer{
+    text-align: center;
+    padding: 2vh 0;
+}
+
+@media (max-width: 780px){
+    .projects{
+        display: block;
+    }
+}
+@media (max-width: 517px){
+    main{
+        display: block;
+    }
+    .img-profile{
+        width: 20vw;
+    }
+}
