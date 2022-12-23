@@ -124,6 +124,9 @@ nav > ul > li > a > img{
 .projetos > a{
     text-decoration: none;
 }
+.projetos > a:hover{
+    text-decoration: underline;
+}
 .title,
 .fig,
 .project-one figure,
@@ -134,6 +137,10 @@ nav > ul > li > a > img{
 }
 .title img{
     margin-right: 1vw;
+}
+.project-one:hover,
+.project-two:hover{
+    outline: 1px solid var(--text-color);
 }
 .project-one .title img,
 .project-two .title img{
@@ -167,6 +174,13 @@ nav > ul > li > a > img{
 .last-post,
 .post{
     display: flex;
+}
+.posts:hover{
+    outline: 1px solid var(--text-color);
+   
+}
+.last-post:hover{
+    outline: 1px solid var(--text-color);
 }
 .last-post .post{
     flex-direction: column;
